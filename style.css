@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Merriweather:wght@300;400;700;900&family=Nova+Script&family=Roboto+Slab:wght@200;300;400;500;700&display=swap');
+
+body{
+    background-color: #F6F1E9;
+    font-family: 'Roboto Slab', serif;
+    color: #4F200D;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 8px;
+}
+
+.nomeJogo{
+    font-family: 'Handjet', cursive;
+    text-align: center;
+    margin: 1em;
+    font-size: 3rem;
+}
+
+.combate{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.opcoes__jogador{
+    width: 20%;
+    margin: auto;
+    background-color: #4F200D;
+    color: #FF8400;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+select::-webkit-select {
+    appearance: none;
+}
+select {
+    appearance: none;
+    -moz-appearance: none;
+}
+select:focus {
+    outline: none;
+    border: 1px solid #FFD93D; /* ou qualquer outra cor de sua escolha */
+}
+select option {
+    background-color: #FF8400;
+    color: #4F200D;
+}
+
+.escolhaPersonagem{
+    padding: 0 2em;
+    margin: auto;
+    justify-content: center;
+}
+
+.luta{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.luta__play{
+    font-size: 0.8rem;
+    margin: auto;
+    
+}
+
+.arena{
+    background-color: #4F200D;
+    width: 100px;
+    color: #F6F1E9;
+    padding: 0.5em;
+    border: 2px solid #ff8400;
+    border-radius: 10%;
+    margin: 0 0 0 50px;
+}
+
+.arena:hover{
+    background-color: #FF8400;
+}
+
+.espadinhaAtacar1{
+    width: 20px;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+.magiaAtacar1{
+    width: 20px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.invisivel{
+    display: none;
+}
+
+.espadinhaAtacar2{
+    width: 20px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.magiaAtacar2{
+    width: 20px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+.informacaoCombate{
+    display: flex;
+    margin-left: 100px;
+}
+
+.informacaoCombateP1{
+    flex: 50%;
+    display: flex;
+}
+
+.informacaoCombateP2{
+    flex: 50%;
+    display: flex;
+    margin-left: 70px;
+    padding-left: 20px;
+}
+
+.informacaoCombateP1item{
+    flex: 30%;
+}
+
+.rodada__valor{
+    font-size: 1.2rem;
+    margin: 0 8em;
+}
+
+.rodada__valor2{
+    font-size: 1.4rem;
+    margin: 0.5em 8em;
+    color: #ff8400;
+}
+
+.rodada__valor3{
+    font-size: 1rem;
+    margin: 0.5em 8em;
+    color: #4F200D;
+}
+
+.valoresDadosPersagem{
+    width: 200px;
+}
+
+.persona{
+    margin: 5em 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.bloco{
+    margin: 0.5em;
+    display: flex;
+}
+
+.ximba{
+    display: none;
+}
+
+.texto__imagem{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+
+}
+.texto__imagem--Descricao{
+    flex: 50%;
+}
+
+.valorCombatePlayer{
+    display: flex;
+    justify-content: center;
+}
+
+.nomePersonagem{
+    font-family: 'Merriweather', serif;
+    color: #FF8400;
+}
+
+.nomePersonagem:hover+.ximba{
+    display: block;
+}
+
+.fisicoMagico{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.atributos{
+    display: flex;
+}
+
+.dadosPersonagem{
+    font-family: 'Nova Script', cursive;
+    padding: 0.2em;
+}
+
+.poderesMagicos__magia{
+    font-family: 'Nova Script', cursive;
+    padding: 0 2em;
+}
+
+.jogarNovamente {
+    background: linear-gradient(45deg, #C87941, #87431D);
+    margin: 20px;
+    border: none;
+    color: #4F200D;
+    padding: 0.5em 1.25em;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.jogarNovamente:hover{
+    background: linear-gradient(45deg, #87431D, #C87941);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.semiFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.semiFooter__img{
+    width: 100px;
+}
+
+.semiFooter__img:hover{
+    scale: 1.4;
+}
+
+.rodape {
+    text-align: center;
+    background-color: #4F200D;
+    padding: 0.5em 0;
+    color: #FFD93D;
+}
+
+.boitata{
+    flex: 50%;
+    width: 5%;
+}
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hide{
+    display: block;
+}
+
+.modal-content {
+    background-color: #F6F1E9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.fecharModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-lista{
+    list-style: none;
+    cursor: pointer;
+}
+
+.dados__personag{
+    display: flex;
+    justify-content: center;
+}
+
+.dados__personag__indv{
+    background-color: #FF8400;
+    margin: 20px;
+    color: #4F200D;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-5px, 0); }
+    20% { transform: translate(5px, 0); }
+    30% { transform: translate(-5px, 0); }
+    40% { transform: translate(5px, 0); }
+    50% { transform: translate(-5px, 0); }
+    60% { transform: translate(5px, 0); }
+    70% { transform: translate(-5px, 0); }
+    80% { transform: translate(5px, 0); }
+    90% { transform: translate(-5px, 0); }
+    100% { transform: translate(0, 0); }
+}
+  
+.tremor {
+    animation: shake 0.4s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes blink {
+    0% {
+      background-color: black;
+      color: white;
+    }
+    50% {
+      background-color: white;
+      color: black;
+    }
+    100% {
+      background-color: black;
+      color: white;
+    }
+}
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+.blink-text {
+    animation: blink 0.4s 2, fadeIn 1s 2.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}

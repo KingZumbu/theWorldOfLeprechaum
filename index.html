@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Leprechaun</title>
+    <link href="/style.css" rel="stylesheet">
+    <script src="/main.js" defer></script>
+</head>
+<body>
+    <div>
+        <h1 id="fimDeJogo" class="nomeJogo">The World of Leprechaun</h1>
+    </div>
+    <section class="combate">
+        <div class="escolhaPersonagem">
+            <select id="jogador11" class="opcoes__jogador">
+                <option value="Boitatá">Boitatá</option><option value="Master Healing">Master Healing</option>
+                <option value="King Zumbu">King Zumbu</option><option value="Grifo Amaldiçoado">Grifo Amaldiçoado</option>
+                <option value="Adrian - Apenas Mais Uma Historia">Adrian - Apenas Mais Uma Historia</option>
+                <option value="Soul Drain">Soul Drain</option><option value="Kim Jae Son">Kim Jae Son</option>
+                <option value="Luna Enfurecida">Luna Enfurecida</option><option value="Fortaleza">Fortaleza</option>
+                <option value="Guardião do Abismo">O Guardião do Abismo</option>
+            </select>
+            <select id="jogador12" class="opcoes__jogador">
+                <option value="Boitatá">Boitatá</option><option value="Master Healing">Master Healing</option>
+                <option value="King Zumbu">King Zumbu</option><option value="Grifo Amaldiçoado">Grifo Amaldiçoado</option>
+                <option value="Adrian - Apenas Mais Uma Historia">Adrian - Apenas Mais Uma Historia</option>
+                <option value="Soul Drain">Soul Drain</option><option value="Kim Jae Son">Kim Jae Son</option>
+                <option value="Luna Enfurecida">Luna Enfurecida</option><option value="Fortaleza">Fortaleza</option>
+                <option value="Guardião do Abismo">O Guardião do Abismo</option>
+            </select>
+            <select id="jogador13" class="opcoes__jogador">
+                <option value="Boitatá">Boitatá</option><option value="Master Healing">Master Healing</option>
+                <option value="King Zumbu">King Zumbu</option><option value="Grifo Amaldiçoado">Grifo Amaldiçoado</option>
+                <option value="Adrian - Apenas Mais Uma Historia">Adrian - Apenas Mais Uma Historia</option>
+                <option value="Soul Drain">Soul Drain</option><option value="Kim Jae Son">Kim Jae Son</option>
+                <option value="Luna Enfurecida">Luna Enfurecida</option><option value="Fortaleza">Fortaleza</option>
+                <option value="Guardião do Abismo">O Guardião do Abismo</option>
+            </select>
+            <button class="opcoes__jogador" id="btnEscolherPlay1">Confirmar Time</button>
+        </div>
+        <div class="escolhaPersonagem">
+            <select id="jogador21" class="opcoes__jogador">
+                <option value="Boitatá">Boitatá</option><option value="Master Healing">Master Healing</option>
+                <option value="King Zumbu">King Zumbu</option><option value="Grifo Amaldiçoado">Grifo Amaldiçoado</option>
+                <option value="Adrian - Apenas Mais Uma Historia">Adrian - Apenas Mais Uma Historia</option>
+                <option value="Soul Drain">Soul Drain</option><option value="Kim Jae Son">Kim Jae Son</option>
+                <option value="Luna Enfurecida">Luna Enfurecida</option><option value="Fortaleza">Fortaleza</option>
+                <option value="Guardião do Abismo">O Guardião do Abismo</option>
+            </select>
+            <select id="jogador22" class="opcoes__jogador">
+                <option value="Boitatá">Boitatá</option><option value="Master Healing">Master Healing</option>
+                <option value="King Zumbu">King Zumbu</option><option value="Grifo Amaldiçoado">Grifo Amaldiçoado</option>
+                <option value="Adrian - Apenas Mais Uma Historia">Adrian - Apenas Mais Uma Historia</option>
+                <option value="Soul Drain">Soul Drain</option><option value="Kim Jae Son">Kim Jae Son</option>
+                <option value="Luna Enfurecida">Luna Enfurecida</option><option value="Fortaleza">Fortaleza</option>
+                <option value="Guardião do Abismo">O Guardião do Abismo</option>
+            </select>
+            <select id="jogador23" class="opcoes__jogador">
+                <option value="Boitatá">Boitatá</option><option value="Master Healing">Master Healing</option>
+                <option value="King Zumbu">King Zumbu</option><option value="Grifo Amaldiçoado">Grifo Amaldiçoado</option>
+                <option value="Adrian - Apenas Mais Uma Historia">Adrian - Apenas Mais Uma Historia</option>
+                <option value="Soul Drain">Soul Drain</option><option value="Kim Jae Son">Kim Jae Son</option>
+                <option value="Luna Enfurecida">Luna Enfurecida</option><option value="Fortaleza">Fortaleza</option>
+                <option value="Guardião do Abismo">O Guardião do Abismo</option>
+            </select>
+            <button class="opcoes__jogador" id="btnEscolherPlay2">Confirmar Time</button>
+        </div>
+    </section>   
+    <section name="lutaTchan" class="luta">
+        <div id="lutaTchanP1" class="luta__play">
+            <img src="/imagem/P1G1.jpg" alt="Primeiro Guerreiro" class="arena" name="lutaTchanP1o" id="guerreiro__arena11" onclick="abrirAtaqueEincrementaRodada(0,0)" onmouseenter="apareceDadosDuranteRodada(0,0)">
+                <img src="/imagem/atacar.png" alt="Espadinha de função atacar" class="espadinhaAtacar1 invisivel" onclick="abrirDefesa(0,0)">
+                <img src="/imagem/magia.jpeg" alt="Magia Especial" class="magiaAtacar1 invisivel" onclick="alvoDaMagia(0,0)">
+            <img src="/imagem/P1G2.jpg" alt="Segundo Guerreiro" class="arena" name="lutaTchanP1oo" id="guerreiro__arena12" onclick="abrirAtaqueEincrementaRodada(0,1)" onmouseenter="apareceDadosDuranteRodada(0,1)">
+                <img src="/imagem/atacar.png" alt="Espadinha de função atacar" class="espadinhaAtacar1 invisivel" onclick="abrirDefesa(0,1)">
+                <img src="/imagem/magia.jpeg" alt="Magia Especial" class="magiaAtacar1 invisivel" onclick="alvoDaMagia(0,1)">
+            <img src="/imagem/P1G3.jpg" alt="Terceiro Guerreiro" class="arena" name="lutaTchanP1ooo" id="guerreiro__arena13" onclick="abrirAtaqueEincrementaRodada(0,2)" onmouseenter="apareceDadosDuranteRodada(0,2)">
+                <img src="/imagem/atacar.png" alt="Espadinha de função atacar" class="espadinhaAtacar1 invisivel" onclick="abrirDefesa(0,2)">
+                <img src="/imagem/magia.jpeg" alt="Magia Especial" class="magiaAtacar1 invisivel" onclick="alvoDaMagia(0,2)">
+        </div>
+        <div class="valoresDadosPersagem">
+            <p>Nome: <span id="tituloHover"></span></p>
+            <p>Força : <span id="forçaHover"></span></p>
+            <p>Técnica Mágica = <span id="tecnicaHover"></span></p>
+            <p>Magia = <span id="magiaHover"></span></p>
+            <p>Magia Estrutural = <span id="estruturalHover"></span></p>
+        </div>
+        <div id="lutaTchanP2" class="luta__play">
+            <img src="/imagem/P1G1.jpg" alt="Primeiro Guerreiro" class="arena" name="lutaTchanP2o" id="guerreiro__arena21" onclick="abrirAtaque(1,0)" onmouseenter="apareceDadosDuranteRodada(1,0)">
+                <img src="/imagem/atacar.png" alt="Espadinha de função atacar" class="espadinhaAtacar2 invisivel" onclick="abrirDefesa(1,0)">
+                <img src="/imagem/magia.jpeg" alt="Magia Especial" class="magiaAtacar2 invisivel" onclick="alvoDaMagia(1,0)">
+            <img src="/imagem/P1G2.jpg" alt="Segundo Guerreiro" class="arena" name="lutaTchanP2oo" id="guerreiro__arena22" onclick="abrirAtaque(1,1)" onmouseenter="apareceDadosDuranteRodada(1,1)">
+                <img src="/imagem/atacar.png" alt="Espadinha de função atacar" class="espadinhaAtacar2 invisivel" onclick="abrirDefesa(1,1)">
+                <img src="/imagem/magia.jpeg" alt="Magia Especial" class="magiaAtacar2 invisivel" onclick="alvoDaMagia(1,1)">
+            <img src="/imagem/P1G3.jpg" alt="Terceiro Guerreiro" class="arena" name="lutaTchanP2ooo" id="guerreiro__arena23" onclick="abrirAtaque(1,2)" onmouseenter="apareceDadosDuranteRodada(1,2)">
+                <img src="/imagem/atacar.png" alt="Espadinha de função atacar" class="espadinhaAtacar2 invisivel" onclick="abrirDefesa(1,2)">
+                <img src="/imagem/magia.jpeg" alt="Magia Especial" class="magiaAtacar2 invisivel" onclick="alvoDaMagia(1,2)">
+        </div>
+    </section>
+    <section class="informacaoCombate">
+        <div class="informacaoCombateP1">
+            <div class="informacaoCombateP1item">
+                <p class="informacaoCombate__texto">Pdv= <span id="informacaoCombate11__Pdv"></span></p>
+                <p class="informacaoCombate__texto">Energia= <span id="informacaoCombate11__Energia"></span></p>
+            </div>
+            <div class="informacaoCombateP1item">
+                <p class="informacaoCombate__texto">Pdv= <span id="informacaoCombate12__Pdv"></span></p>
+                <p class="informacaoCombate__texto">Energia= <span id="informacaoCombate12__Energia"></span></p>
+            </div>
+            <div class="informacaoCombateP1item">
+                <p class="informacaoCombate__texto">Pdv= <span id="informacaoCombate13__Pdv"></span></p>
+                <p class="informacaoCombate__texto">Energia= <span id="informacaoCombate13__Energia"></span></p>
+            </div>
+        </div>
+        <div class="informacaoCombateP2">
+            <div class="informacaoCombateP1item">
+                <p class="informacaoCombate__texto">Pdv= <span id="informacaoCombate21__Pdv"></span></p>
+                <p class="informacaoCombate__texto">Energia= <span id="informacaoCombate21__Energia"></span></p>
+            </div>
+            <div class="informacaoCombateP1item">
+                <p class="informacaoCombate__texto">Pdv= <span id="informacaoCombate22__Pdv"></span></p>
+                <p class="informacaoCombate__texto">Energia= <span id="informacaoCombate22__Energia"></span></p>
+            </div>
+            <div class="informacaoCombateP1item">
+                <p class="informacaoCombate__texto">Pdv= <span id="informacaoCombate23__Pdv"></span></p>
+                <p class="informacaoCombate__texto">Energia= <span id="informacaoCombate23__Energia"></span></p>
+            </div>
+        </div>
+    </section>
+    <section class="valoresNaTela">
+        <span id="magiaValor" class="rodada__valor2"></span><br>
+        <span id="magiaTexto" class="rodada__valor3 invisivel"></span>
+        <span id="ataqueValor" class="rodada__valor"></span><br>
+        <span id="defesaValor" class="rodada__valor"></span><br>
+    </section>
+
+    <div id="janelaModal1" class="modal">
+        <div class="modal-content">
+            <span class="fecharModal" id="fecharModal1">&times;</span>
+            <h2>Escolha um Ataque</h2>
+            <ul class="modal-lista">
+                <li><p class="modal-item" id="btnPorrada" onclick="validacaoAtaque(1)">Porrada </p></li>
+                <li><p class="modal-item" id="btnMagia">Magia</p></li>
+                <li><p class="modal-item" id="btnMagia__Estrutural">Magia Estrutural</p></li>
+                <li><p class="modal-item" id="btnTécnica__Especial" onclick="validacaoAtaque(4)">Técnica Especial</p></li>
+            </ul>
+        </div>
+        <div class="dados__personag">
+            <div class="dados__personag__indv">
+                <p>Nome: <span id="tituloModalP1"></span></p>
+                <p>Defesa : <span id="defesaModalP1"></span></p>
+                <p>Esquiva = <span id="esquivaModalP1"></span></p>
+                <p>Defesa de Magia = <span id="defesaMagiaModalP1"></span></p>
+            </div>
+            <div class="dados__personag__indv">
+                <p>Nome: <span id="tituloModalP2"></span></p>
+                <p>Defesa : <span id="defesaModalP2"></span></p>
+                <p>Esquiva = <span id="esquivaModalP2"></span></p>
+                <p>Defesa de Magia = <span id="defesaMagiaModalP2"></span></p>
+            </div>
+            <div class="dados__personag__indv">
+                <p>Nome: <span id="tituloModalP3"></span></p>
+                <p>Defesa : <span id="defesaModalP3"></span></p>
+                <p>Esquiva = <span id="esquivaModalP3"></span></p>
+                <p>Defesa de Magia = <span id="defesaMagiaModalP3"></span></p>
+            </div>
+        </div>
+    </div>
+    <div id="janelaModal2" class="modal">
+        <div class="modal-content">
+            <span class="fecharModal" id="fecharModal2">&times;</span>
+            <h2>Escolha uma Defesa</h2>
+            <ul class="modal-lista">
+                <li><p class="modal-item" id="btnDefesa">Defesa </p></li>
+                <li><p class="modal-item" id="btnDefesaDeTécnica">Defesa de Técnica Especial</p></li>
+                <li><p class="modal-item" id="btnEsquiva">Esquiva</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="jogarNovamente" id="jogar__novamente"> Jogar Novamente</button>
+    <section class="personagens">
+        <div class="persona invisivel" id="Boitatá" >
+            <p class="nomePersonagem">Nome: Boitatá</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">O Boitatá é um guerreiro milenar do folclore brasileiro. Uma gigantesca cobra de fogo que vaga na floresta protegento as tribos indígeenas. Quando se sente fraca, ele fica 'Em chamas', para ganhar mais poder. Suas filhas tambem te ajudam, atacando seu adversário.</p>
+                    <img class="boitata" src="/imagem/Boitata.webp" alt="Boitatá">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">9</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">5</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">13</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">9</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">5</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">13</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">16</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Filhas cobras</p>
+                    <p class="poderesMagicos__magia">Rajada de Fogo</p>
+                    <p class="poderesMagicos__magia">Em chamas</p>
+                </div>
+            </div>
+        </div>
+        <div class="persona invisivel" id="Master Healing">
+            <p class="nomePersonagem">Nome: Master Healing</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">O Master Healing é um feiticeiro curandeiro que vaga entre as tribos da Amazônia. Apesar da sua fraca força física, sua magia faz a diferença no confronto. Como curador, ele tem o poder de se curar. No ataque, seus cipós, ganham energia que se perde do adversário quando envenenado.</p>
+                    <img class="boitata" src="/imagem/master healing.jpeg" alt="Master Healing">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">2</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">5</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">13</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">11</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">10</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">14</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Envenenado</p>
+                    <p class="poderesMagicos__magia">Cipó de Ataque</p>
+                    <p class="poderesMagicos__magia">Curando Sempre</p>
+                </div>
+            </div>
+        </div>
+        <div class="persona invisivel" id="King Zumbu">
+            <p class="nomePersonagem">Nome: King Zumbu</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">Simbah Bartoom é o rei do povo Zumbuniano. Mais conhecido como rei Zumbu, levou seu povo a grandes conquistas. Com sua concentração aumenta a sua força. E com ajuda dos Espiritos da Floresta lhe ajudando a defender, mais fácil fica suas batalhas.</p>
+                    <img class="boitata" src="/imagem/King Zumbu.jpeg" alt="King Zumbu">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">12</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">10</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">5</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">2</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">10</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">9</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">14</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Power</p>
+                    <p class="poderesMagicos__magia">Soco das 100 Almas</p>
+                    <p class="poderesMagicos__magia">Espiritos da Floresta</p>
+                </div>
+            </div>
+        </div>
+        <div class="persona invisivel" id="Grifo Amaldiçoado">
+            <p class="nomePersonagem">Nome: Grifo Amaldiçoado</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">Vítima de uma cruel feiticeira há 100 anos, o Grifo Amaldiçoado luta e a procura de uma cura para sua maldição. Quando em Tempestade, fica mais bem mais forte. Com seu olhar hipnótico, tem o poder de deixar seu adversário Estático, onde seu ataque é muito mais cirúrgico.</p>
+                    <img class="boitata" src="/imagem/Girfo Amaldi.jpeg" alt="Grifo Amaldiçoado">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">4</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">13</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">10</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">10</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">14</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Estático</p>
+                    <p class="poderesMagicos__magia">Sonar Grifo</p>
+                    <p class="poderesMagicos__magia">Tempestade</p>
+                </div>
+            </div>
+        </div>
+        <div class="persona invisivel" id="Adrian">
+            <p class="nomePersonagem">Nome: Adrian - Apenas Mais Uma Historia</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">Adrian é o protagonista dos contos jovens mundialmente conhecido, Apenas mais uma história. Nesses contos, Adrian lutou contra Persiam, Quimera e até Hades. Ao concentrar, ele aumenta a sua força. A beira da morte, ele ainda arruma uma sobrevida.</p>
+                    <img class="boitata" src="/imagem/Adrian.jpeg" alt="Adrian">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">12</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">3</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">4</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">2</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">1</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">2</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Power</p>
+                    <p class="poderesMagicos__magia">Baratas Arranhando</p>
+                    <p class="poderesMagicos__magia">Sobrevivendo</p>
+                </div>
+            </div>
+        </div>
+        <div class="persona invisivel" id="Ceifador de Almas">
+            <p class="nomePersonagem">Nome: Soul Drain</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">O Soul Drain é um comercial do inferno que sobervive sugando a alma dos seres vivos. Fraco fisicamente, fica forte durante as batalhas. Acabar com ele rápido deve ser a estratégia de seus adversários, pois permanecer no combate longo com ele, não é bom com ele fortalecido. Ele pode sugar a vida de seu oponente.</p>
+                    <img class="boitata" src="/imagem/Soul Sucker.jpeg" alt="Soul Drain">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">2</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">3</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">4</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">15</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">4</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">2</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">15</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">30</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Sugando</p>
+                    <p class="poderesMagicos__magia">Golpes de Espíritos</p>
+                    <p class="poderesMagicos__magia">Fortalecido</p>
+                </div>
+            </div>
+        </div>
+        <div class="persona invisivel" id="Kim Jae Son">
+            <p class="nomePersonagem">Nome: Kim Jae Son</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">Kim Jae Son é o guerreiro mais lendário do exército de Gengis Kahn. Por ter nascido cego, ele elevou muito suas técnicas e poderes de luta durante a vida. Quando sente o espírito de seus inimigos, pode paralizá-los. Quando defendendo, pode absorver a energia de seus adversários, podendo usar em sua "Espada Flamejante".</p>
+                    <img class="boitata" src="/imagem/kim jae son.jpeg" alt="Kim Jae Son">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">4</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">9</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">14</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Estático</p>
+                    <p class="poderesMagicos__magia">Espada Flamejante</p>
+                    <p class="poderesMagicos__magia">Defendendo e Absorvendo</p>
+                </div>
+            </div>
+        </div>
+        <div class="persona invisivel" id="Luna Enfurecida">
+            <p class="nomePersonagem">Nome: Luna Enfurecida</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">A Luna Enfurecida é uma guerreira que vinga a morte de sua família. Ela pode ir se carregando para aumentar o seu poder. E quando uma luta com ela deve ser rápida, pois ela fica mais forte que qualquer guerreiro</p>
+                    <img class="boitata" src="/imagem/Luna Enfurecida.jpeg" alt="Luna Enfurecida">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">2</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">3</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">12</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">5</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">12</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">14</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Carregando</p>
+                    <p class="poderesMagicos__magia">Sonar da Lua</p>
+                    <p class="poderesMagicos__magia">Mais forte que Nunca</p>
+                </div>
+            </div>
+        </div>
+        <div class="persona invisivel" id="Fortaleza">
+            <p class="nomePersonagem">Nome: Fortaleza</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">Fortaleza é o castelo do rei Akhan Aliasan. Fortemente equipada e com muitos aqueiros em suas ameias. Ela, como guerreiro, não efetua ataque nem esquiva, mas é muito forte sua magia. Ter ela em campo como sua aliada pode ser muito favorável para o combate, axiliando e muito, seus aliados.</p>
+                    <img class="boitata" src="/imagem/fortaleza.jpeg" alt="Fortaleza">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">0</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">11</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">0</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">11</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">14</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">9</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">11</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">0</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">14</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">35</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Flechada Cruel</p>
+                    <p class="poderesMagicos__magia">Nenhum</p>
+                    <p class="poderesMagicos__magia">Recuperando</p>
+                </div>
+            </div>
+        </div>
+        <div class="persona invisivel" id="Guardião do Abismo">
+            <p class="nomePersonagem">Nome: O Guardião do Abismo</p1>
+            <div class="ximba">
+                <div class="texto__imagem">
+                    <p class="texto__imagem--Descricao">O Guardião do Abismo é um guerreiro da Legião do mal, que tem como objetivo manter a estabilidade do submundo. A Lâmina Demoníaca é uma rajada que vem do próprio inferno. o Rugido das Trevas dói na alma e seu abraço lhe deixa mais forte.</p>
+                    <img class="boitata" src="/imagem/o guardião do abismo.jpeg" alt="Guardião do Abismo">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Força:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Esquiva:</p>
+                        <p class="dadosPersonagem">5</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Resistência:</p>
+                        <p class="dadosPersonagem">7</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Pontos de Vida:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                </div>
+                <div class="fisicoMagico">
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia:</p>
+                        <p class="dadosPersonagem">6</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Defesa de Magia:</p>
+                        <p class="dadosPersonagem">8</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Técnica Mágica:</p>
+                        <p class="dadosPersonagem">15</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Magia Estrutural:</p>
+                        <p class="dadosPersonagem">9</p>
+                    </div>
+                    <div class="atributos">
+                        <p class="dadosPersonagem">Energia:</p>
+                        <p class="dadosPersonagem">16</p>
+                    </div>
+                </div>
+            </div>
+            <div class="poderesMagicos">
+                <p>Poderes e Técnicas Mágicas</p>
+                <div>
+                    <p class="poderesMagicos__magia">Rugido das Trevas</p>
+                    <p class="poderesMagicos__magia">Lâmina Demoníaca</p>
+                    <p class="poderesMagicos__magia">Abraço do Abismo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="semiFooter">
+        <img class="semiFooter__img" name="Boitatá" src="/imagem/Boitata.webp" alt="Boitatá" onclick="aparecePersonagem('Boitatá')" onmouseover="desaparecePersonagem('Boitatá')">
+        <img class="semiFooter__img" name="Master Healing" src="/imagem/master healing.jpeg" alt="Master Healing" onclick="aparecePersonagem('Master Healing')" onmouseover="desaparecePersonagem('Master Healing')">
+        <img class="semiFooter__img" name="King Zumbu" src="/imagem/King Zumbu.jpeg" alt="King Zumbu" onclick="aparecePersonagem('King Zumbu')" onmouseover="desaparecePersonagem('King Zumbu')">
+        <img class="semiFooter__img" name="Grifo Amaldiçoado" src="/imagem/Girfo Amaldi.jpeg" alt="Grifo Amaldiçoado" onclick="aparecePersonagem('Grifo Amaldiçoado')" onmouseover="desaparecePersonagem('Grifo Amaldiçoado')">
+        <img class="semiFooter__img" name="Adrian" src="/imagem/Adrian.jpeg" alt="Adrian" onclick="aparecePersonagem('Adrian')" onmouseover="desaparecePersonagem('Adrian')">
+        <img class="semiFooter__img" name="Ceifador de Almas" src="/imagem/Soul Sucker.jpeg" alt="Ceifador de Almas" onclick="aparecePersonagem('Ceifador de Almas')" onmouseover="desaparecePersonagem('Ceifador de Almas')">
+        <img class="semiFooter__img" name="Kim Jae Son" src="/imagem/kim jae son.jpeg" alt="Kim Jae Son" onclick="aparecePersonagem('Kim Jae Son')" onmouseover="desaparecePersonagem('Kim Jae Son')">
+        <img class="semiFooter__img" name="Luna Enfurecida" src="/imagem/Luna Enfurecida.jpeg" alt="Luna Enfurecida" onclick="aparecePersonagem('Luna Enfurecida')" onmouseover="desaparecePersonagem('Luna Enfurecida')">
+        <img class="semiFooter__img" name="Fortaleza" src="/imagem/fortaleza.jpeg" alt="Fortaleza" onclick="aparecePersonagem('Fortaleza')" onmouseover="desaparecePersonagem('Fortaleza')">
+        <img class="semiFooter__img" name="Guardião do Abismo" src="/imagem/o guardião do abismo.jpeg" alt="Guardião do Abismo" onclick="aparecePersonagem('Guardião do Abismo')" onmouseover="desaparecePersonagem('Guardião do Abismo')">
+    </section>
+    <footer>
+        <p class="rodape">Produzido por Igor F Junqueira Portugal</p>
+    </footer>
+    
+</body>
+</html>
